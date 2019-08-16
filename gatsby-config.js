@@ -7,9 +7,9 @@ module.exports = {
   siteMetadata: {
     url,
     siteUrl: url,
-    title: 'Blog by John Doe',
+    title: 'Hassan Abid',
     subtitle:
-      'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+      'Senior Software Engineer. Google Developers Expert for Android',
     copyright: '© All rights reserved.',
     disqusShortname: '',
     menu: [
@@ -27,13 +27,10 @@ module.exports = {
       },
     ],
     author: {
-      name: 'John Doe',
+      name: 'Hassan Abid',
       email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vk: '#',
+      twitter: 'hassanabidpk',
+      github: 'hassanabidpk',
     },
   },
   plugins: [
