@@ -4,10 +4,11 @@ layout: page
 path: "/about"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+I am a passionate Software Engineer with several years of experience in Mobile and Web development. I am currently based in Singapore, Where I work as Tech Lead for [BeLive technology](http://www.tech.belive.sg/). 
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](./1.jpg)
+![Code](./2.jpg)
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
+Before that, I lived in Seoul where I worked for NexStreaming Corp. with the NexPlayer SDK team. I worked on [KineMaster](https://www.kinemaster.com), an Android Video editing app, in the same company. 
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+
+I love writing and sharing my experiences about Android, iOS and Web development with fellow developers through blogs posts, events and conferences. When I am not coding, You can find me hiking, running or cycling with my GoPro.

@@ -14,7 +14,7 @@ module.exports = {
     disqusShortname: '',
     menu: [
       {
-        label: 'Articles',
+        label: 'Talks and Workshops',
         path: '/',
       },
       {
