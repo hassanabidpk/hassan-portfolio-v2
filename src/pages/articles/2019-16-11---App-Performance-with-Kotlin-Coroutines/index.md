@@ -14,7 +14,16 @@ description: "Talk about Kotlin Coroutines for Android Architecture components a
 ---
 
 ## Slides
+
+<script async class="speakerdeck-embed" data-id="be0b0bad80e3498a9b820ba88d8f8772" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
+
 [Speakerdeck link](http://speakerdeck.com/oembed.json?url=https://speakerdeck.com/hassanabidpk/improving-app-performance-with-kotlin-coroutines)
+
+
+## Sample App
+
+Get sample app from [Github](https://github.com/hassanabidpk/pizzafinder)
 
 ![image](IMG_1035.JPG)
 
