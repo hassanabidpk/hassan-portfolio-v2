@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import TalkCard from '../components/TalkCard.astro';
-import { talks, mentoring, totalTalks, totalAttendees } from '../lib/talks';
+import { talks, totalTalks, totalAttendees } from '../lib/talks';
 ---
 <BaseLayout title="Talks" description={`${totalTalks} talks as a Google Developers Expert for Android`}>
   <h1>Talks</h1>
@@ -11,10 +11,5 @@ import { talks, mentoring, totalTalks, totalAttendees } from '../lib/talks';
   </p>
   <div style="margin-top:1.5rem">
     {talks.map((t) => <TalkCard {...t} />)}
-  </div>
-
-  <h2 style="margin-top:3rem">Mentoring &amp; Workshops</h2>
-  <div style="margin-top:1.5rem">
-    {mentoring.map((m) => <TalkCard {...m} />)}
   </div>
 </BaseLayout>
