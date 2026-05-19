@@ -1,0 +1,17 @@
+---
+import { site } from '../config';
+const items = [
+  ['GitHub', site.socials.github],
+  ['Twitter', site.socials.twitter],
+  ['LinkedIn', site.socials.linkedin],
+  ['Instagram', site.socials.instagram],
+] as const;
+---
+<nav class="socials" aria-label="Social links">
+  {items.map(([label, href]) => (
+    <a href={href} target="_blank" rel="noopener noreferrer">{label}</a>
+  ))}
+</nav>
+<style>
+  .socials { display: flex; gap: 1rem; flex-wrap: wrap; font-size: var(--step--1); }
+</style>

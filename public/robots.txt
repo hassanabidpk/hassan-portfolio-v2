@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hassanabid.netlify.app/sitemap-index.xml

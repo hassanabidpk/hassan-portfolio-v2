@@ -1,0 +1,323 @@
+{
+  "source": "Advocu — Google Developer Experts (Public speaking activities)",
+  "fetchedOn": "2026-05-19",
+  "count": 35,
+  "photosNote": "image = Advocu event photo (33 of 35 talks have one; 2 are null where no photo was uploaded).",
+  "talks": [
+    {
+      "title": "On-Device AI: Is It Time to Go All-In, or Do We Still Need the Cloud?",
+      "date": "2025-06-14",
+      "attendees": 150,
+      "location": "Singapore",
+      "summary": "On-device AI with Gemini Nano via ML Kit GenAI APIs, AI Edge SDK, and open-source Gemma-3n models.",
+      "tags": ["Android", "Generative AI", "Gemma", "MediaPipe", "Gemini Nano", "On-Device AI"],
+      "image": "https://storage.googleapis.com/advocu-app/images/6597d5c3b52eaef4e46a602e/activity-images/7390f190-13a3-4c76-90b4-6f7fb871f4b8"
+    },
+    {
+      "title": "What's new in On-device Generative AI",
+      "date": "2024-11-23",
+      "attendees": 250,
+      "location": "Singapore",
+      "summary": "Moving from cloud to on-device generative AI with Gemma 2 and Google's AI Edge SDK.",
+      "tags": ["Android", "Generative AI", "Gemma", "TensorFlow", "MediaPipe", "Android Studio", "Gemini"],
+      "image": "https://storage.googleapis.com/advocu-app/images/6597d5c3b52eaef4e46a602e/activity-images/201e23ba-9a75-4a59-a84a-a9e41c42fa2d"
+    },
+    {
+      "title": "What's new in Compose and Android 15",
+      "date": "2024-07-27",
+      "attendees": 20,
+      "location": null,
+      "summary": "New announcements for Jetpack Compose and Android 15.",
+      "tags": ["Android", "Jetpack"],
+      "image": "https://storage.googleapis.com/advocu-app/images/6597d5c3b52eaef4e46a602e/activity-images/0e046518-3b24-4c61-9caf-82b097ada4f3"
+    },
+    {
+      "title": "What's new in Android (Generative AI)",
+      "date": "2024-07-06",
+      "attendees": 156,
+      "location": "Hanoi, Vietnam",
+      "summary": "Gemini SDK for Android, Firebase Vertex AI SDK, Gemini in Android Studio, and on-device AI with Gemma.",
+      "tags": ["Android Studio", "Android", "Gemini", "Vertex AI", "AI Studio", "Gemma", "Generative AI"],
+      "image": "https://storage.googleapis.com/advocu-app/images/6597d5c3b52eaef4e46a602e/activity-images/1e082da6-c293-4c94-bfd6-c76bd0b10037"
+    },
+    {
+      "title": "What's New in Android: Embracing the Era of Generative AI",
+      "date": "2024-06-29",
+      "attendees": 259,
+      "location": "Kuala Lumpur, Malaysia",
+      "summary": "Post-Google I/O look at how Gemini powers the next generation of Android apps.",
+      "tags": ["Android", "Android Studio", "Gemini", "Vertex AI", "Firebase", "Kotlin"],
+      "image": "https://storage.googleapis.com/advocu-app/images/6597d5c3b52eaef4e46a602e/activity-images/05d34178-0151-459a-9261-3f70325643db"
+    },
+    {
+      "title": "What's New in Android: Embracing the Era of Generative AI",
+      "date": "2024-06-09",
+      "attendees": 210,
+      "location": "Singapore",
+      "summary": "Post-Google I/O look at how Gemini powers the next generation of Android apps.",
+      "tags": ["Gemini", "Android Studio", "Firebase", "Vertex AI"],
+      "image": "https://storage.googleapis.com/advocu-app/images/6597d5c3b52eaef4e46a602e/activity-images/ecf57f49-cd83-40df-89b9-21c4661bd88f"
+    },
+    {
+      "title": "Android Video Editing with Media3 Transformer APIs: Feat Generative AI",
+      "date": "2023-12-02",
+      "attendees": 70,
+      "location": "Kuala Lumpur, Malaysia",
+      "summary": "Deep dive into Jetpack Media3 for video editing and transcoding.",
+      "tags": ["Jetpack", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2023/12/12/4ee8d175-34ce-441d-9b95-88387d3fcbab.jpg"
+    },
+    {
+      "title": "How to build an Instagram-like App using Android Media APIs",
+      "date": "2023-12-09",
+      "attendees": 150,
+      "location": "George Town, Penang, Malaysia",
+      "summary": "Media3, Transformation APIs, ExoPlayer, and Android 14.",
+      "tags": ["Android Studio", "Android", "Jetpack"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2023/12/12/374aaab9-d10e-41e8-9fa8-d4cf5f0aea10.JPG"
+    },
+    {
+      "title": "Beyond FFMPEG: Streamlined Video Editing on Android with Media3 Transformer APIs",
+      "date": "2023-11-18",
+      "attendees": 50,
+      "location": "Singapore",
+      "summary": "Media3 updates, Transformation APIs, Android device streaming, and Studio Bot demo.",
+      "tags": ["Android Studio", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2023/11/20/05cde69d-2ee2-4a3e-94cd-bd30f1939728.JPG"
+    },
+    {
+      "title": "Empower your Dev Journey: Ask the experts",
+      "date": "2023-11-18",
+      "attendees": 50,
+      "location": "Singapore",
+      "summary": "GDE panel guidance on mobile development at DevFest Singapore 2023.",
+      "tags": ["Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2023/11/20/3b6c0532-ab27-48c2-a3aa-ba7f454bb42c.JPG"
+    },
+    {
+      "title": "Premium Media Experiences on Android",
+      "date": "2023-11-05",
+      "attendees": 300,
+      "location": "Bangkok, Thailand",
+      "summary": "Summary of two Google I/O talks on what's new in Android Media.",
+      "tags": ["Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2023/11/07/f5ecabc3-8112-46bd-a58c-5bce9eb9ada5.jpg"
+    },
+    {
+      "title": "Whats New in Android (Feat - Android Media)",
+      "date": "2023-07-15",
+      "attendees": 450,
+      "location": "Jakarta, Indonesia",
+      "summary": "Jetpack Media3 1.0 release plus upcoming video transcoding and editing APIs.",
+      "tags": ["Android Studio", "MediaPipe", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2023/07/15/cf6b93a4-21db-454e-8c3b-7ec004632efa.jpg"
+    },
+    {
+      "title": "What's new in Android and Android Media?",
+      "date": "2023-07-08",
+      "attendees": 300,
+      "location": "Kuala Lumpur, Malaysia",
+      "summary": "Jetpack Media3 1.0 release plus upcoming video transcoding and editing APIs.",
+      "tags": ["Android Studio", "Jetpack", "MediaPipe", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2023/07/11/44b32b24-6fc0-467b-9caf-bec324009736.JPG"
+    },
+    {
+      "title": "What's new in Android Media?",
+      "date": "2023-05-27",
+      "attendees": 204,
+      "location": "Singapore",
+      "summary": "Jetpack Media3 1.0 release plus upcoming video transcoding and editing APIs.",
+      "tags": ["Android Studio", "MediaPipe", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2023/05/29/72691b72-080c-4a12-a2d9-f557e178f163.JPG"
+    },
+    {
+      "title": "How to avoid spaghetti codebase with App Modularization",
+      "date": "2022-12-03",
+      "attendees": 60,
+      "location": "Kuala Lumpur, Malaysia",
+      "summary": "Official revised app architecture and modularization guide for complex apps.",
+      "tags": ["App Architecture", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2022/12/13/9861d084-ae47-4234-b40a-8e8db6d70a04.jpg"
+    },
+    {
+      "title": "Introduction to App modularization",
+      "date": "2022-11-26",
+      "attendees": 150,
+      "location": "Singapore",
+      "summary": "Best practices and recommended patterns from the official app modularization guide.",
+      "tags": ["App Architecture", "Android"],
+      "image": null
+    },
+    {
+      "title": "The General overview of Mobile development for Android Apps",
+      "date": "2020-11-28",
+      "attendees": 50,
+      "location": "DSC PSB Academy",
+      "summary": "Intro overview of Android app development for DSC PSB Academy.",
+      "tags": ["Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2021/04/22/3346d3e7-18c8-44c8-beb7-447210a8b343.png"
+    },
+    {
+      "title": "How to develop android apps in Kotlin Multi-platform project setup",
+      "date": "2020-12-19",
+      "attendees": 100,
+      "location": null,
+      "summary": "Kotlin Multiplatform project setup for Android.",
+      "tags": ["Kotlin", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2021/04/22/59ca100e-c26a-4c0a-bea5-e8e750fb00f9.png"
+    },
+    {
+      "title": "Getting Mad with App Bundles",
+      "date": "2020-11-25",
+      "attendees": 50,
+      "location": null,
+      "summary": "MAD Skills talk on Android App Bundles.",
+      "tags": ["Android Studio", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2021/04/22/12af8e94-4d0d-4930-b27f-43d2d8222aa2.png"
+    },
+    {
+      "title": "What's New in Kotlin 1.4",
+      "date": "2020-10-22",
+      "attendees": 200,
+      "location": null,
+      "summary": "Kotlin 1.4 quality, performance, and multiplatform updates.",
+      "tags": ["Kotlin", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2021/04/22/b64d38b3-6f69-4459-b151-ac823591196f.png"
+    },
+    {
+      "title": "MAD Skills - Work Manager",
+      "date": "2021-04-22",
+      "attendees": 50,
+      "location": null,
+      "summary": "Migrating to WorkManager from GCMNetworkManager and Firebase JobDispatcher.",
+      "tags": ["Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2021/04/22/fd3b6e84-376a-47f2-a19c-694711619954.jpg"
+    },
+    {
+      "title": "What's new with Android 10 [DevFest Singapore 2019]",
+      "date": "2019-11-30",
+      "attendees": 120,
+      "location": "Singapore",
+      "summary": "Android 10 themes: emerging devices, privacy/security, and digital wellbeing.",
+      "tags": ["Android Studio", "Jetpack", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2020/01/20/8a0971c82b50c7017831.jpg"
+    },
+    {
+      "title": "Android Dev Summit 2019 Recap [Devfest Yangon]",
+      "date": "2019-12-08",
+      "attendees": 100,
+      "location": "Yangon, Myanmar",
+      "summary": "Modern Android Development: Jetpack Compose and Motion Layout Editor in Android Studio 4.0.",
+      "tags": ["Kotlin", "Android Studio", "Jetpack", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2020/01/20/d9ffa148e14a1026ec99.jpg"
+    },
+    {
+      "title": "Improving app performance with Kotlin Coroutines [DevFest Cebu]",
+      "date": "2019-11-16",
+      "attendees": 60,
+      "location": "Cebu City, Philippines",
+      "summary": "Coroutines for safe, simple asynchronous code on Android.",
+      "tags": ["Kotlin", "Jetpack", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2020/01/20/f9db5c8e173ce4f62c69.jpg"
+    },
+    {
+      "title": "Improve app performance with Kotlin coroutines [DevFest KL]",
+      "date": "2019-12-07",
+      "attendees": 100,
+      "location": "Kuala Lumpur, Malaysia",
+      "summary": "Coroutines for safe, simple asynchronous code on Android.",
+      "tags": ["Kotlin", "Jetpack", "Android"],
+      "image": null
+    },
+    {
+      "title": "Android 101",
+      "date": "2019-09-07",
+      "attendees": 120,
+      "location": "Kuala Lumpur, Malaysia",
+      "summary": "Intro to Android and Kotlin for DSC leaders from South East Asia.",
+      "tags": ["Kotlin", "Jetpack", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/09/13/9d4f219804b9e9a5daee.jpg"
+    },
+    {
+      "title": "CameraX JetPack - Android Developers Day 2019",
+      "date": "2019-07-21",
+      "attendees": 200,
+      "location": "Jakarta, Indonesia",
+      "summary": "CameraX API overview.",
+      "tags": ["Jetpack", "Kotlin", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/08/05/43b69c051e2a7689ccfe.jpeg"
+    },
+    {
+      "title": "Exploring CameraX Jetpack Library",
+      "date": "2019-07-14",
+      "attendees": 200,
+      "location": "Hanoi, Vietnam",
+      "summary": "How JetPack CameraX makes camera app development easier vs Camera/Camera2.",
+      "tags": ["Jetpack", "Kotlin", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/08/05/b236aa92c959024a9d72.jpg"
+    },
+    {
+      "title": "What's new in Android JetPack",
+      "date": "2019-06-16",
+      "attendees": 100,
+      "location": "Kuala Lumpur, Malaysia",
+      "summary": "Google I/O JetPack updates including CameraX.",
+      "tags": ["Jetpack", "Kotlin", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/06/18/78f3f205127b9ce3b1ea.jpg"
+    },
+    {
+      "title": "Modern Android Development with Kotlin",
+      "date": "2019-03-25",
+      "attendees": 70,
+      "location": "Singapore",
+      "summary": "Deep dive into Kotlin and modern Android architecture.",
+      "tags": ["Jetpack", "Kotlin", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/05/05/175c89d0bab93b39bcd5.jpg"
+    },
+    {
+      "title": "Building Modern Apps using Android Architecture Components - DevFest KL 2018",
+      "date": "2018-12-01",
+      "attendees": 150,
+      "location": "Kuala Lumpur, Malaysia",
+      "summary": "LiveData, ViewModel, Room, and lifecycle components for MVVM architecture.",
+      "tags": ["Jetpack", "App Architecture", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/01/16/e2fe2ebbb1bc53f49c9e.jpg"
+    },
+    {
+      "title": "Recap of Android Dev Summit 2018 - DevFest Singapore 2018",
+      "date": "2018-12-01",
+      "attendees": 150,
+      "location": "Singapore",
+      "summary": "Major Android Dev Summit 2018 announcements: Kotlin, Jetpack, Android Studio, App Bundles, Foldables.",
+      "tags": ["Jetpack", "Android Studio", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/01/16/84daf6a1245092db6312.jpeg"
+    },
+    {
+      "title": "What's new in Android Pie",
+      "date": "2018-10-13",
+      "attendees": 100,
+      "location": "Manila, Philippines",
+      "summary": "Android 9 Pie new features and behaviour changes.",
+      "tags": ["Kotlin", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2018/11/03/c47041cb16f0436ee9e1.jpg"
+    },
+    {
+      "title": "Highlights from Android Things - Google IO Extended Palawan",
+      "date": "2018-07-26",
+      "attendees": 488,
+      "location": "Puerto Princesa, Philippines",
+      "summary": "Intro to Android Things at Google I/O Extended Palawan 2018.",
+      "tags": ["Android Things", "Kotlin", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2018/08/14/a15f791971f65875c384.jpg"
+    },
+    {
+      "title": "Android JetPack - Google IO Extended Singapore 2018",
+      "date": "2018-07-06",
+      "attendees": 250,
+      "location": "Singapore",
+      "summary": "Android Jetpack architecture components, with Kotlin-first code samples.",
+      "tags": ["Kotlin", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2018/07/08/3479abcd41213ee3196c.jpg"
+    }
+  ]
+}

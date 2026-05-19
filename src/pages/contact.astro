@@ -1,0 +1,13 @@
+---
+import { getEntry, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const entry = await getEntry('pages', 'contact');
+if (!entry) throw new Error('Missing "pages" content entry: contact');
+const { Content } = await render(entry);
+---
+<BaseLayout title={entry.data.title}>
+  <article class="prose fade-in">
+    <h1>{entry.data.title}</h1>
+    <Content />
+  </article>
+</BaseLayout>

@@ -1,0 +1,38 @@
+@import '@fontsource-variable/inter';
+@import './tokens.css';
+
+* { box-sizing: border-box; margin: 0; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Inter Variable', system-ui, sans-serif;
+  font-size: var(--step-0);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; height: auto; border-radius: var(--radius); }
+.wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 1.25rem; }
+.wrap-wide { max-width: 64rem; margin: 0 auto; padding: 0 1.25rem; }
+h1 { font-size: var(--step-3); line-height: 1.1; letter-spacing: -.02em; }
+h2 { font-size: var(--step-2); line-height: 1.2; margin-top: 2.5rem; }
+h3 { font-size: var(--step-1); margin-top: 2rem; }
+.fade-in { animation: fade .6s ease both; }
+@keyframes fade { from { opacity: 0; transform: translateY(12px); } }
+.embed { margin: 1.5rem 0; }
+.prose > * + * { margin-top: 1.15rem; }
+.prose pre { padding: 1rem; border-radius: var(--radius); overflow-x: auto; }
+.prose code:not(pre code) {
+  background: var(--bg-soft); padding: .15em .4em; border-radius: 6px;
+  font-size: .9em;
+}
+.prose blockquote {
+  border-left: 3px solid var(--accent); padding-left: 1rem;
+  color: var(--fg-soft);
+}
