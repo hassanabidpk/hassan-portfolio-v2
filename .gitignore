@@ -1,12 +1,14 @@
-node_modules/
-.cache/
-# public/ was Gatsby build output; for Astro it is the static assets dir
-!public/
-npm-debug.log
-.eslintcache
-.gatsby-context.js
-.idea
-gatsby-starter-lumen.iml
-package-lock.json
-.astro/
+# build output
 dist/
+# generated types
+.astro/
+# dependencies
+node_modules/
+# logs
+npm-debug.log*
+# environment
+.env
+.env.production
+.env.development
+# os
+.DS_Store
