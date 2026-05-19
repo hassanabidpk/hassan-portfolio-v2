@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const posts = await getCollection('posts', ({ data }) => !data.draft);
+const tags = [...new Set(posts.flatMap((p) => p.data.tags))].sort();
+---
+<BaseLayout title="Tags">
+  <h1>Tags</h1>
+  <ul class="tag-list">
+    {tags.map((t) => <li><a href={`/tags/${t}/`}>{t}</a></li>)}
+  </ul>
+  <style>
+    .tag-list { display: flex; flex-wrap: wrap; gap: .75rem; list-style: none; padding: 0; margin-top: 1.5rem; }
+    .tag-list a { border: 1px solid var(--border); padding: .35rem .75rem; border-radius: 999px; }
+  </style>
+</BaseLayout>

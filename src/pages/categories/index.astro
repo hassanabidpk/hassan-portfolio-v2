@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const posts = await getCollection('posts', ({ data }) => !data.draft);
+const cats = [...new Set(posts.map((p) => p.data.category))].sort();
+---
+<BaseLayout title="Categories">
+  <h1>Categories</h1>
+  <ul class="tag-list">
+    {cats.map((c) => <li><a href={`/categories/${c}/`}>{c}</a></li>)}
+  </ul>
+  <style>
+    .tag-list { display: flex; flex-wrap: wrap; gap: .75rem; list-style: none; padding: 0; margin-top: 1.5rem; }
+    .tag-list a { border: 1px solid var(--border); padding: .35rem .75rem; border-radius: 999px; }
+  </style>
+</BaseLayout>
