@@ -21,9 +21,11 @@ Created:
 - `src/lib/postPath.ts` — pure URL-derivation from frontmatter `path`
 - `src/styles/tokens.css`, `src/styles/global.css`
 - `src/layouts/BaseLayout.astro`, `src/layouts/PostLayout.astro`
-- `src/components/`: `BaseHead.astro`, `Header.astro`, `Footer.astro`, `ThemeToggle.astro`, `SocialLinks.astro`, `Hero.astro`, `PostCard.astro`, `ProjectCard.astro`, `SpeakerDeck.astro`, `SlideShare.astro`, `Analytics.astro`
-- `src/pages/`: `index.astro`, `blog.astro`, `posts/[...slug].astro`, `about.astro`, `contact.astro`, `tags/index.astro`, `tags/[tag].astro`, `categories/index.astro`, `categories/[category].astro`, `404.astro`, `rss.xml.js`
+- `src/components/`: `BaseHead.astro`, `Header.astro`, `Footer.astro`, `ThemeToggle.astro`, `SocialLinks.astro`, `Hero.astro`, `PostCard.astro`, `ProjectCard.astro`, `TalkCard.astro`, `SpeakerDeck.astro`, `SlideShare.astro`, `Analytics.astro`
+- `src/pages/`: `index.astro`, `blog.astro`, `posts/[...slug].astro`, `about.astro`, `contact.astro`, `talks.astro`, `tags/index.astro`, `tags/[tag].astro`, `categories/index.astro`, `categories/[category].astro`, `404.astro`, `rss.xml.js`
 - `src/content/posts/*.md(x)`, `src/content/pages/{about,contact}.md`, `src/content/projects/*.md`
+- `src/data/talks.json` — 35 real GDE talks pulled from Advocu (already in repo)
+- `src/lib/talks.ts` — typed loader for `talks.json`
 - `src/assets/profile.jpeg`
 - `public/robots.txt`, `public/_redirects`
 - `tests/postPath.test.ts`, `tests/content.test.ts`
@@ -143,6 +145,7 @@ export const site = {
   },
   menu: [
     { label: 'Home', path: '/' },
+    { label: 'Talks', path: '/talks' },
     { label: 'Blog', path: '/blog' },
     { label: 'About', path: '/about' },
     { label: 'Contact', path: '/contact' },
@@ -1373,9 +1376,142 @@ git commit -m "feat: add 404, RSS feed, robots.txt"
 
 ---
 
+### Task 18: Talks page + home Talks section
+
+35 real GDE talks were pulled from Advocu and committed to
+`src/data/talks.json` (shape: `{ source, fetchedOn, count, talks: [...] }`;
+each talk has `title`, `date` (ISO), `attendees`, `location` (string|null),
+`summary`, `tags`). This task surfaces them. Depends on Task 13 (home) and
+Task 11 (`BaseLayout`); independent of everything else.
+
+**Files:**
+- Create: `src/lib/talks.ts`, `src/components/TalkCard.astro`, `src/pages/talks.astro`
+- Modify: `src/pages/index.astro` (add a "Recent talks" teaser)
+
+- [ ] **Step 1: Write `src/lib/talks.ts`** (typed loader, sorted newest-first)
+
+```ts
+import data from '../data/talks.json';
+
+export interface Talk {
+  title: string;
+  date: string;
+  attendees: number;
+  location: string | null;
+  summary: string;
+  tags: string[];
+  image: string | null;
+}
+
+export const talks: Talk[] = [...(data.talks as Talk[])].sort(
+  (a, b) => +new Date(b.date) - +new Date(a.date)
+);
+
+export const totalTalks = talks.length;
+export const totalAttendees = talks.reduce((n, t) => n + t.attendees, 0);
+```
+
+- [ ] **Step 2: Write `src/components/TalkCard.astro`**
+
+```astro
+---
+import type { Talk } from '../lib/talks';
+type Props = Talk;
+const { title, date, attendees, location, summary, tags, image } = Astro.props;
+const dt = new Date(date).toLocaleDateString('en-US',
+  { year: 'numeric', month: 'short' });
+---
+<div class="talk">
+  {image && (
+    <img class="shot" src={image} alt={title} loading="lazy" decoding="async" />
+  )}
+  <div>
+    <p class="meta">{dt} · {attendees} attendees{location ? ` · ${location}` : ''}</p>
+    <h3>{title}</h3>
+    <p class="desc">{summary}</p>
+    <p class="tags">{tags.join(' · ')}</p>
+  </div>
+</div>
+<style>
+  .talk { display: grid; grid-template-columns: 200px 1fr; gap: 1.25rem;
+    padding: 1.25rem 0; border-bottom: 1px solid var(--border); }
+  .talk:has(.shot) { align-items: start; }
+  .talk:not(:has(.shot)) { grid-template-columns: 1fr; }
+  .shot { width: 200px; aspect-ratio: 4/3; object-fit: cover; border-radius: var(--radius); }
+  .meta { color: var(--fg-soft); font-size: var(--step--1); }
+  h3 { margin: .25rem 0 .35rem; }
+  .desc { color: var(--fg-soft); }
+  .tags { color: var(--fg-soft); font-size: var(--step--1); margin-top: .5rem; }
+  @media (max-width: 640px) { .talk { grid-template-columns: 1fr; } .shot { width: 100%; } }
+</style>
+```
+
+- [ ] **Step 3: Write `src/pages/talks.astro`**
+
+```astro
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TalkCard from '../components/TalkCard.astro';
+import { talks, totalTalks, totalAttendees } from '../lib/talks';
+---
+<BaseLayout title="Talks" description={`${totalTalks} talks as a Google Developers Expert for Android`}>
+  <h1>Talks</h1>
+  <p style="color:var(--fg-soft);margin-top:.5rem">
+    {totalTalks} talks · {totalAttendees.toLocaleString()}+ attendees ·
+    Google Developers Expert for Android
+  </p>
+  <div style="margin-top:1.5rem">
+    {talks.map((t) => <TalkCard {...t} />)}
+  </div>
+</BaseLayout>
+```
+
+- [ ] **Step 4: Add a "Recent talks" teaser to `src/pages/index.astro`**
+
+In `src/pages/index.astro`, add to the frontmatter import block:
+
+```ts
+import { talks } from '../lib/talks';
+const recentTalks = talks.slice(0, 5);
+```
+
+Then add this `<section>` immediately before the "Latest posts" section:
+
+```astro
+  <section>
+    <h2>Recent talks</h2>
+    {recentTalks.map((t) => (
+      <p style="padding:.6rem 0;border-bottom:1px solid var(--border)">
+        <strong>{t.title}</strong><br />
+        <span style="color:var(--fg-soft);font-size:var(--step--1)">
+          {new Date(t.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}
+          {t.location ? ` · ${t.location}` : ''}
+        </span>
+      </p>
+    ))}
+    <p style="margin-top:1.5rem"><a href="/talks">All talks →</a></p>
+  </section>
+```
+
+- [ ] **Step 5: Verify**
+
+Run: `npx astro build`
+Expected: `dist/talks/index.html` exists; build succeeds. Open dev server,
+confirm `/talks` lists 35 talks newest-first with event photos (33 of 35;
+2 text-only talks render without an image) and home shows 5 recent talks.
+
+- [ ] **Step 6: Commit**
+
+```bash
+git add src/lib/talks.ts src/components/TalkCard.astro src/pages/talks.astro src/pages/index.astro
+git commit -m "feat: add talks page and home talks teaser from Advocu data"
+```
+
+---
+
 ## Phase 6 — Deploy config & cleanup
 
-### Task 18: Netlify config + redirects
+### Task 19: Netlify config + redirects
 
 **Files:**
 - Rewrite: `netlify.toml`
@@ -1417,7 +1553,7 @@ git commit -m "chore: configure Netlify for Astro static deploy"
 
 ---
 
-### Task 19: Remove dead Gatsby tree
+### Task 20: Remove dead Gatsby tree
 
 **Files:**
 - Delete: `gatsby-config.js`, `gatsby-node.js`, `.browserslistrc`, `travis.yml`, `.codeclimate.yml`, `src/templates/`, `src/components/` (old jsx), `src/assets/scss/`, `src/assets/fonts/`, `src/pages/articles/`, `src/pages/pages/`, `src/pages/index.jsx`, `src/pages/tags.jsx`, `src/pages/categories.jsx`, `src/pages/404.jsx`, `src/pages/photo.jpg`, `src/pages/hassan_github_photo.jpeg`, old `yarn.lock`
@@ -1450,7 +1586,7 @@ git commit -m "chore: remove dead Gatsby v2 source tree"
 
 ---
 
-### Task 20: Manual walkthrough & README
+### Task 21: Manual walkthrough & README
 
 **Files:**
 - Modify: `README.md`
@@ -1458,7 +1594,8 @@ git commit -m "chore: remove dead Gatsby v2 source tree"
 - [ ] **Step 1: Run dev server and walk the site**
 
 Run: `npm run dev` then visit and confirm each renders correctly:
-- `/` — hero, projects grid, latest posts
+- `/` — hero, projects grid, recent talks teaser, latest posts
+- `/talks` — all 35 talks, newest-first, with attendees/location
 - `/blog` — all 7 posts listed
 - `/posts/app-kotlin-coroutines/` — speakerdeck embed + local image render
 - `/posts/android-101/` — slideshare iframe renders
@@ -1498,6 +1635,7 @@ npm run dev
 Posts live in `src/content/posts/` (`.md`/`.mdx`). Each post's public URL
 is derived from its `path` frontmatter to keep legacy `/posts/...` URLs
 stable. Pages in `src/content/pages/`, projects in `src/content/projects/`.
+Talks data in `src/data/talks.json` (sourced from Advocu GDE profile).
 Site metadata in `src/config.ts`.
 ```
 
@@ -1519,19 +1657,20 @@ git commit -m "docs: update README for Astro stack"
 - All 7 posts + about/contact kept → Tasks 5–6; integrity test Task 7. ✓
 - Projects section (seeded, editable) → Task 6 + Task 13. ✓
 - Modern-minimal visual, light/dark, no-flash, reduced-motion → Tasks 8, 10, 11. ✓
-- Hero re-homes sidebar identity; sidebar retired → Task 12 + Task 19. ✓
+- Hero re-homes sidebar identity; sidebar retired → Task 12 + Task 20. ✓
 - Self-hosted Inter, google-fonts dropped → Task 8. ✓
-- Routes (home/blog/post/about/contact/tags/categories/404/rss/robots/sitemap) → Tasks 13–17. ✓
+- Routes (home/blog/post/about/contact/talks/tags/categories/404/rss/robots/sitemap) → Tasks 13–18. ✓
+- Talks page + home teaser from Advocu data (35 talks) → Task 18. ✓
 - SEO/OG/canonical → Task 9. ✓
 - Analytics replacement, configurable, dead UA not shipped → Tasks 2, 9. ✓
-- Netlify static config, Node 20 pin, drop yarn flags → Task 18. ✓
-- `_redirects` for drift → Task 18. ✓
-- Dead tree removed → Task 19. ✓
-- Verification (check/build/manual/Lighthouse) → Tasks 19–20.
+- Netlify static config, Node 20 pin, drop yarn flags → Task 19. ✓
+- `_redirects` for drift → Task 19. ✓
+- Dead tree removed → Task 20. ✓
+- Verification (check/build/manual/Lighthouse) → Tasks 20–21.
 - Embeds preserved via MDX components → Task 5.
 
 **Placeholder scan:** No TBD/TODO. Migration content shown with concrete frontmatter; bodies reference the verified source files by exact path. The 3 plain-`.md` post bodies are described as "copy original body verbatim" with a fully-shown example — acceptable since the source is in-repo and exact.
 
-**Type consistency:** `slugFromPath`/`urlFromPath` signatures consistent across Tasks 3, 12, 14, 17. `site` config shape consistent across Tasks 2, 9, 10, 12, 17. Collection names `posts`/`pages`/`projects` consistent Tasks 4–17. `PostCard` props (`title,description,date,category,path`) match the schema and all call sites.
+**Type consistency:** `slugFromPath`/`urlFromPath` signatures consistent across Tasks 3, 12, 14, 17. `site` config shape consistent across Tasks 2, 9, 10, 12, 17. Collection names `posts`/`pages`/`projects` consistent Tasks 4–17. `PostCard` props (`title,description,date,category,path`) match the schema and all call sites. `Talk` interface in `src/lib/talks.ts` matches the `talks.json` shape and `TalkCard` props (Task 18).
 
-**Note:** Lighthouse spot-check from the spec is folded into Task 20's manual walkthrough rather than a separate automated gate (static site; no CI Lighthouse configured) — honest scoping, called out here.
+**Note:** Lighthouse spot-check from the spec is folded into Task 21's manual walkthrough rather than a separate automated gate (static site; no CI Lighthouse configured) — honest scoping, called out here.

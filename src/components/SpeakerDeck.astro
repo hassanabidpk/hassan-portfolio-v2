@@ -3,7 +3,7 @@
 interface Props { dataId: string; }
 const { dataId } = Astro.props;
 ---
-<div class="embed">
+<div class="embed" role="region" aria-label="SpeakerDeck presentation">
   <script async class="speakerdeck-embed" data-id={dataId}
     data-ratio="1.33333333333333" src="https://speakerdeck.com/assets/embed.js"
   ></script>
