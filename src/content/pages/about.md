@@ -3,10 +3,8 @@ title: "About me"
 path: "/about"
 ---
 
-I am a passionate Software Engineer with several years of experience in Mobile and Web development. I am currently based in Singapore, where I work as Tech Lead for [BeLive technology](http://www.tech.belive.sg/).
+I'm Hassan Abid, Chief Technology Officer at [BeLive Technology](https://belive.technology/) (NASDAQ: BLIV), a video streaming and live-commerce platform. With 13+ years in full-stack development, I lead a cross-functional engineering team building agentic AI applications and secure, scalable multi-cloud systems.
 
 ![Code](./about.jpg)
 
-Before that, I lived in Seoul where I worked for NexStreaming Corp. with the NexPlayer SDK team. I worked on [KineMaster](https://www.kinemaster.com), an Android Video editing app, in the same company.
-
-I love writing and sharing my experiences about Android, iOS and Web development with fellow developers through blog posts, events and conferences. When I am not coding, you can find me hiking, running or cycling with my GoPro.
+Before BeLive I was at NexStreaming, where I built the NexPlayer 360 Unity Plugin and the Swift NexPlayer SDK and shipped key features for [KineMaster](https://www.kinemaster.com) (500M+ users). I'm a Google Developer Expert for Android, and these days I'm focused on scaling AI-driven products with cloud-native tech, LLMs and agentic design — and on sharing what I learn through talks, workshops and mentoring.

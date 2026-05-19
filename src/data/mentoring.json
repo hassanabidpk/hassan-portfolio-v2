@@ -1,15 +1,115 @@
 {
-  "source": "Advocu — Google Developer Experts (Mentoring & Workshops)",
+  "source": "Advocu — Google Developer Experts (Mentoring activities)",
   "fetchedOn": "2026-05-19",
-  "count": 1,
+  "count": 12,
   "items": [
     {
-      "title": "Mentoring at Google Startup Jam 2019 - Singapore",
-      "date": "2019-08-31",
+      "title": "Mentoring an old class fellow about AI Tools and Coding",
+      "date": "2026-04-18",
+      "attendees": 1,
+      "location": null,
+      "summary": "Mentored a Canada-based mechanical engineer on AI Studio and Antigravity for vibe coding.",
+      "tags": ["AI - AI Studio", "AI - Gemini"],
+      "image": "https://storage.googleapis.com/advocu-app/images/6597d5c3b52eaef4e46a602e/activity-images/108dd4d2-371f-46a9-8c5d-969eb0f949f9"
+    },
+    {
+      "title": "School Project Chat for career as AI Specialist",
+      "date": "2025-11-18",
+      "attendees": 1,
+      "location": null,
+      "summary": "Mentored polytechnic students on starting a career as AI programmers/specialists.",
+      "tags": ["AI"],
+      "image": "https://storage.googleapis.com/advocu-app/images/6597d5c3b52eaef4e46a602e/activity-images/3de404cb-2b03-4724-8938-afd907df9196"
+    },
+    {
+      "title": "Google AI First Accelerator Singapore",
+      "date": "2025-06-17",
+      "attendees": 13,
       "location": "Singapore",
-      "summary": "Mentored early stage startups at Google Startup Jam organized by Google Business Group Singapore.",
-      "tags": ["GDE", "Mentoring"],
-      "post": "/posts/google-startup-jam-2019/"
+      "summary": "Mentored AI-first founders across healthcare, education, hospitality and automation on architecture, model selection, deployment and scaling.",
+      "tags": ["AI", "AI - Agents", "AI - Gemini", "Android - Gemini Nano", "AI - Gemma", "AI - Generative AI", "AI - ML Engineering (MLOps)", "AI - On-Device AI"],
+      "image": "https://storage.googleapis.com/advocu-app/images/6597d5c3b52eaef4e46a602e/activity-images/3391e297-86d3-4767-ad4c-7ce805f2567a"
+    },
+    {
+      "title": "Google for Startups Mentoring (AI First SG): Dimuto",
+      "date": "2024-05-14",
+      "attendees": 3,
+      "location": "Singapore",
+      "summary": "GfS AI-First accelerator mentoring — DiMuto, an AI-driven global AgriTrade ecosystem.",
+      "tags": ["AI - Generative AI"],
+      "image": null
+    },
+    {
+      "title": "Google for Startups Mentoring (AI First SG): Rabbit",
+      "date": "2024-05-09",
+      "attendees": 3,
+      "location": "Singapore",
+      "summary": "GfS AI-First accelerator mentoring — Rabbit, Google Cloud optimization for data and platform engineers.",
+      "tags": ["AI - Generative AI", "Google Cloud"],
+      "image": null
+    },
+    {
+      "title": "Google for Startups Mentoring (AI First SG): Ailiverse",
+      "date": "2024-05-07",
+      "attendees": 3,
+      "location": "Singapore",
+      "summary": "GfS AI-First accelerator mentoring — Ailiverse, a generative-AI startup turning text into high-quality video.",
+      "tags": ["AI - Generative AI"],
+      "image": null
+    },
+    {
+      "title": "Google for Startups Mentoring (AI First SG): Storybrain",
+      "date": "2024-05-07",
+      "attendees": 3,
+      "location": "Singapore",
+      "summary": "GfS AI-First accelerator mentoring — StoryBrain, a model generating adaptive media and interfaces.",
+      "tags": ["AI - Generative AI"],
+      "image": null
+    },
+    {
+      "title": "Google for Startups Mentoring (AI First SG): C2 Carbon Sync",
+      "date": "2024-05-07",
+      "attendees": 3,
+      "location": "Singapore",
+      "summary": "GfS AI-First accelerator mentoring — C2 Carbon Sync, enabling the transition to carbon neutrality through technology.",
+      "tags": ["AI - Generative AI", "AI", "Vision API"],
+      "image": null
+    },
+    {
+      "title": "Mentoring Session for 2024 Solution Challenge TOP 100 teams: Glow Alarm",
+      "date": "2024-04-30",
+      "attendees": 3,
+      "location": null,
+      "summary": "Reviewed submission documents for the Glow Alarm team in the 2024 Solution Challenge Top 100.",
+      "tags": ["Android"],
+      "image": null
+    },
+    {
+      "title": "Mentoring Session for 2024 Solution Challenge TOP 100 teams: WhyFlood",
+      "date": "2024-04-25",
+      "attendees": 3,
+      "location": null,
+      "summary": "Reviewed system architecture and sustainability impact for the WhyFlood team in the 2024 Solution Challenge Top 100.",
+      "tags": ["AI", "UX / UI Design"],
+      "image": null
+    },
+    {
+      "title": "Mentoring Session for 2024 Solution Challenge TOP 100 teams: EPAS",
+      "date": "2024-04-19",
+      "attendees": 3,
+      "location": null,
+      "summary": "Gave detailed feedback on the EPAS team's Arduino-based idea and reward system in the 2024 Solution Challenge Top 100.",
+      "tags": ["AI", "Dart - Flutter", "UX / UI Design"],
+      "image": null
+    },
+    {
+      "title": "Mentoring Session for 2024 Solution Challenge TOP 100 teams: Combus",
+      "date": "2024-04-17",
+      "attendees": 3,
+      "location": null,
+      "summary": "Advised the Combus team on moving bus number-plate recognition to a real-time video stream and reducing response time, in the 2024 Solution Challenge Top 100.",
+      "tags": ["Vision API", "AI"],
+      "image": null
     }
   ]
 }

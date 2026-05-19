@@ -1,0 +1,188 @@
+{
+  "source": "Advocu — Google Developer Experts (Workshop activities)",
+  "fetchedOn": "2026-05-19",
+  "count": 20,
+  "items": [
+    {
+      "title": "Facilitator at Build AI agents with Google Agent Development Kit Lab",
+      "date": "2025-08-28",
+      "attendees": 10,
+      "location": "Singapore",
+      "summary": "Hands-on lab on building AI agents with the Google Agent Development Kit (ADK).",
+      "tags": ["AI - Agent Development Kit (ADK)", "AI - Gemini", "AI - Agents"],
+      "image": "https://storage.googleapis.com/advocu-app/images/6597d5c3b52eaef4e46a602e/activity-images/c2988d9a-50ab-4502-80d1-c107768f85dc"
+    },
+    {
+      "title": "Gemini in Action - From Prompts to AI Agents",
+      "date": "2025-06-13",
+      "attendees": 55,
+      "location": null,
+      "summary": "Interactive session guiding students from simple prompts to multi-step AI agent behaviors with Google Gemini.",
+      "tags": ["AI - Gemini", "AI - Agent Development Kit (ADK)", "AI - Vertex AI", "AI - AI Studio", "AI - Agents", "AI - Generative AI"],
+      "image": "https://storage.googleapis.com/advocu-app/images/6597d5c3b52eaef4e46a602e/activity-images/d037c299-b311-4dc3-9daa-84ead56339b8"
+    },
+    {
+      "title": "Facilitator at MLSG Advanced Build with AI Workshop",
+      "date": "2025-05-17",
+      "attendees": 50,
+      "location": "Singapore",
+      "summary": "Hands-on workshop on Google's latest Gemini updates and the Agent framework.",
+      "tags": ["AI - Agent Development Kit (ADK)", "AI - AI Studio", "AI - Gemini", "AI - Agents", "AI - Generative AI", "AI - Vertex AI"],
+      "image": null
+    },
+    {
+      "title": "Build a production-grade Android App with Gemini API",
+      "date": "2024-07-27",
+      "attendees": 20,
+      "location": null,
+      "summary": "Building the next generation of Android apps with Gemini after Google I/O announcements.",
+      "tags": ["AI - AI Studio", "AI - Gemini", "AI", "Firebase", "Android", "Android - Android Studio", "ML Products - Vertex AI"],
+      "image": "https://storage.googleapis.com/advocu-app/images/6597d5c3b52eaef4e46a602e/activity-images/8c08a283-902d-4fd6-8307-8c58fa4ec72a"
+    },
+    {
+      "title": "Build Android Apps with AI",
+      "date": "2024-07-18",
+      "attendees": 20,
+      "location": null,
+      "summary": "Demos building apps with Gemini for Android for GDSC members at Monash University Malaysia.",
+      "tags": ["Android", "AI - Gemini", "Android - Android Studio", "AI - AI Studio"],
+      "image": null
+    },
+    {
+      "title": "Google For Startups Accelerator (AI First) Discovery Call with Jaz",
+      "date": "2024-04-25",
+      "attendees": 3,
+      "location": null,
+      "summary": "GfS AI-first accelerator discovery call with Jaz, a next-gen accounting & finance platform.",
+      "tags": ["AI"],
+      "image": "https://storage.googleapis.com/advocu-app/images/6597d5c3b52eaef4e46a602e/activity-images/2a70120a-7b57-42fc-9c7a-1bd283adf2fa"
+    },
+    {
+      "title": "Google For Startups Accelerator (AI First) Discovery Call with Rabbit",
+      "date": "2024-04-22",
+      "attendees": 3,
+      "location": null,
+      "summary": "GfS AI-first accelerator discovery call with Rabbit, a Google Cloud optimization platform.",
+      "tags": ["AI", "AI - Generative AI"],
+      "image": null
+    },
+    {
+      "title": "Build With AI Singapore",
+      "date": "2024-03-16",
+      "attendees": 50,
+      "location": "Singapore",
+      "summary": "Facilitator for the Build with AI workshop, Singapore.",
+      "tags": ["AI - Generative AI"],
+      "image": "https://storage.googleapis.com/advocu-app/images/6597d5c3b52eaef4e46a602e/activity-images/ef100778-91a7-467a-95eb-9d45428c2c2c"
+    },
+    {
+      "title": "Android Study Jam - Google Developers Students Club - Multimedia University Malaysia",
+      "date": "2024-01-18",
+      "attendees": 23,
+      "location": null,
+      "summary": "Introduction to building Generative AI apps for Android.",
+      "tags": ["Generic Android", "AI - Generative AI", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2024/01/22/0a82ffef-5ee9-4e94-a90f-11d49b5b8d5b.jpeg"
+    },
+    {
+      "title": "Google for Startups Accelerator: Southeast Asia - PasarMikro",
+      "date": "2023-03-08",
+      "attendees": 3,
+      "location": "Singapore",
+      "summary": "Mentoring South East Asia and Pakistan startups at a bootcamp held in Google's Singapore office.",
+      "tags": ["Generic Android", "Android - App Architecture & Arch Components", "Android"],
+      "image": null
+    },
+    {
+      "title": "Google for Startups Accelerator: Southeast Asia - Docosan",
+      "date": "2023-02-07",
+      "attendees": 2,
+      "location": "Singapore",
+      "summary": "Mentoring South East Asia and Pakistan startups at a bootcamp held in Google's Singapore office.",
+      "tags": ["Generic Android", "Android - App Architecture & Arch Components", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2023/03/24/f564a1eb-9edd-4425-835a-109534eba578.jpg"
+    },
+    {
+      "title": "Google for Startups Accelerator: Southeast Asia - Noice",
+      "date": "2023-02-07",
+      "attendees": 2,
+      "location": "Singapore",
+      "summary": "Mentoring South East Asia and Pakistan startups at a bootcamp held in Google's Singapore office.",
+      "tags": ["Generic Android", "Android - App Architecture & Arch Components", "Android"],
+      "image": null
+    },
+    {
+      "title": "Women Developers Academy South-east Asia 2022",
+      "date": "2022-04-24",
+      "attendees": 1,
+      "location": null,
+      "summary": "Helping women in tech build the skills and confidence to become tech presenters and speakers.",
+      "tags": ["Generic Android", "Android"],
+      "image": null
+    },
+    {
+      "title": "Women Developer Academy Southeast-Asia 2021",
+      "date": "2021-10-26",
+      "attendees": 2,
+      "location": null,
+      "summary": "Helping women in tech build the skills and confidence to become tech presenters and speakers (Jun–Jul 2021).",
+      "tags": ["Generic Android", "Android"],
+      "image": null
+    },
+    {
+      "title": "Philippine Android Weekend 2020 (DSC Philippine)",
+      "date": "2020-12-05",
+      "attendees": 200,
+      "location": null,
+      "summary": "Getting started with Kotlin for Android development.",
+      "tags": ["Android - Kotlin", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2021/04/22/7bfa175b-f2de-4473-ae8e-6c2a1fb60e00.png"
+    },
+    {
+      "title": "Modern Android Development with Kotlin",
+      "date": "2019-12-27",
+      "attendees": 100,
+      "location": "Quetta, Pakistan",
+      "summary": "Deep dive into Kotlin and modern Android architecture — two sessions and a codelab.",
+      "tags": ["Android - Kotlin", "Android - Android Studio", "Android - Jetpack", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2020/01/20/ec643ba93b53cee3250c.jpg"
+    },
+    {
+      "title": "Google Startup Jam 2019",
+      "date": "2019-08-31",
+      "attendees": 20,
+      "location": "Singapore",
+      "summary": "One-day Startup Jam for seed-stage startups — product sprint and tech case studies, Android focus.",
+      "tags": ["Generic Android", "UX App Review", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/09/13/369e8dbf1c66aaedc8ba.jpeg",
+      "post": "/posts/google-startup-jam-2019/"
+    },
+    {
+      "title": "Android CodeLab - JetPack",
+      "date": "2019-01-19",
+      "attendees": 23,
+      "location": "Singapore",
+      "summary": "Hands-on codelab: Navigation Architecture Component and WorkManager.",
+      "tags": ["Android - Jetpack", "Android - Android Studio", "Android - Kotlin", "Android"],
+      "image": null
+    },
+    {
+      "title": "G4ID Developer Showcase 2018: The Developer Challenge",
+      "date": "2018-12-07",
+      "attendees": 15,
+      "location": "Jakarta, Indonesia",
+      "summary": "Day-long hackathon with 15 finalist solutions for 5 Indonesian industry challenges.",
+      "tags": ["Generic Android", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/01/16/88a129f1e46487d53d20.jpg"
+    },
+    {
+      "title": "Kotlin Workshop",
+      "date": "2018-07-26",
+      "attendees": 40,
+      "location": "Puerto Princesa, Philippines",
+      "summary": "Teaching how to build Android apps using Kotlin.",
+      "tags": ["Android - Kotlin", "Android - Android Studio", "Android - Android Auto", "Android"],
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2018/08/14/19b244f0c5728ad05512.jpg"
+    }
+  ]
+}
