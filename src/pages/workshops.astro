@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TalkCard from '../components/TalkCard.astro';
+import { workshops, totalWorkshops, workshopAttendees } from '../lib/talks';
+---
+<BaseLayout title="Workshops" description={`${totalWorkshops} workshops as a Google Developers Expert for Android`}>
+  <h1>Workshops</h1>
+  <p style="color:var(--fg-soft);margin-top:.5rem">
+    {totalWorkshops} workshops · {workshopAttendees.toLocaleString()}+ attendees ·
+    Google Developers Expert for Android
+  </p>
+  <div style="margin-top:1.5rem">
+    {workshops.map((w) => <TalkCard {...w} />)}
+  </div>
+</BaseLayout>
