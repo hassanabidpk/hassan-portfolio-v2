@@ -4,12 +4,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
 import PostCard from '../components/PostCard.astro';
 import ProjectCard from '../components/ProjectCard.astro';
+import { talks } from '../lib/talks';
 
 const posts = (await getCollection('posts', ({ data }) => !data.draft))
   .sort((a, b) => +new Date(b.data.date) - +new Date(a.data.date));
 const latest = posts.slice(0, 4);
 const projects = (await getCollection('projects'))
   .sort((a, b) => a.data.order - b.data.order);
+const recentTalks = talks.slice(0, 5);
 ---
 <BaseLayout wide>
   <Hero />
@@ -18,6 +20,19 @@ const projects = (await getCollection('projects'))
     <div class="grid">
       {projects.map((p) => <ProjectCard {...p.data} />)}
     </div>
+  </section>
+  <section>
+    <h2>Recent talks</h2>
+    {recentTalks.map((t) => (
+      <p style="padding:.6rem 0;border-bottom:1px solid var(--border)">
+        <strong>{t.title}</strong><br />
+        <span style="color:var(--fg-soft);font-size:var(--step--1)">
+          {new Date(t.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short' })}
+          {t.location ? ` · ${t.location}` : ''}
+        </span>
+      </p>
+    ))}
+    <p style="margin-top:1.5rem"><a href="/talks">All talks →</a></p>
   </section>
   <section>
     <h2>Latest posts</h2>
