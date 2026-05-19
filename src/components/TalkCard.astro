@@ -1,17 +1,42 @@
 ---
 import type { Talk } from '../lib/talks';
-type Props = Talk;
-const { title, date, attendees, location, summary, tags, image } = Astro.props;
-const dt = new Date(date).toLocaleDateString('en-US',
-  { year: 'numeric', month: 'short' });
+interface Props {
+  title: string;
+  date: string;
+  attendees?: number;
+  location: string | null;
+  summary: string;
+  tags: string[];
+  image?: string | null;
+  post?: string | null;
+}
+const { title, date, attendees, location, summary, tags, image, post } =
+  Astro.props;
+const dt = new Date(date).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'short',
+});
+const meta = [
+  dt,
+  attendees != null ? `${attendees} attendees` : null,
+  location,
+]
+  .filter(Boolean)
+  .join(' · ');
 ---
 <div class="talk">
   {image && (
-    <img class="shot" src={image} alt={title} loading="lazy" decoding="async" />
+    post ? (
+      <a href={post} aria-label={title}>
+        <img class="shot" src={image} alt={title} loading="lazy" decoding="async" />
+      </a>
+    ) : (
+      <img class="shot" src={image} alt={title} loading="lazy" decoding="async" />
+    )
   )}
   <div>
-    <p class="meta">{dt} · {attendees} attendees{location ? ` · ${location}` : ''}</p>
-    <h3>{title}</h3>
+    <p class="meta">{meta}</p>
+    <h3>{post ? <a href={post}>{title}</a> : title}</h3>
     <p class="desc">{summary}</p>
     <p class="tags">{tags.join(' · ')}</p>
   </div>
@@ -24,6 +49,8 @@ const dt = new Date(date).toLocaleDateString('en-US',
   .shot { width: 200px; aspect-ratio: 4/3; object-fit: cover; border-radius: var(--radius); }
   .meta { color: var(--fg-soft); font-size: var(--step--1); }
   h3 { margin: .25rem 0 .35rem; }
+  h3 a { color: var(--fg); }
+  h3 a:hover { color: var(--accent); }
   .desc { color: var(--fg-soft); }
   .tags { color: var(--fg-soft); font-size: var(--step--1); margin-top: .5rem; }
   @media (max-width: 640px) { .talk { grid-template-columns: 1fr; } .shot { width: 100%; } }
