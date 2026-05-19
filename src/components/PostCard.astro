@@ -18,6 +18,7 @@ const dt = new Date(date).toLocaleDateString('en-US',
   .card { display: block; padding: 1.25rem 0; border-bottom: 1px solid var(--border); color: var(--fg); }
   .card:hover { text-decoration: none; }
   .card:hover h3 { color: var(--accent); }
+  .card:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
   .meta { color: var(--fg-soft); font-size: var(--step--1); }
   .desc { color: var(--fg-soft); margin-top: .35rem; }
   h3 { margin: .2rem 0 0; }

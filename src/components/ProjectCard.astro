@@ -10,8 +10,8 @@ const { title, summary, tags, link, repo } = Astro.props;
   <p>{summary}</p>
   <p class="tags">{tags.join(' · ')}</p>
   <p class="links">
-    {link && <a href={link} target="_blank" rel="noopener noreferrer">Visit</a>}
-    {repo && <a href={repo} target="_blank" rel="noopener noreferrer">Code</a>}
+    {link && <a href={link} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${title}`}>Visit</a>}
+    {repo && <a href={repo} target="_blank" rel="noopener noreferrer" aria-label={`${title} source code`}>Code</a>}
   </p>
 </div>
 <style>
