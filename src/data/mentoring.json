@@ -1,7 +1,7 @@
 {
   "source": "Advocu — Google Developer Experts (Mentoring activities)",
   "fetchedOn": "2026-05-19",
-  "count": 5,
+  "count": 6,
   "items": [
     {
       "title": "Google AI First Accelerator Singapore",
@@ -20,6 +20,21 @@
         "AI - On-Device AI"
       ],
       "image": "https://storage.googleapis.com/advocu-app/images/6597d5c3b52eaef4e46a602e/activity-images/3391e297-86d3-4767-ad4c-7ce805f2567a"
+    },
+    {
+      "title": "Google for Startups (AI First) Singapore",
+      "date": "2024-05-15",
+      "attendees": null,
+      "location": "Singapore",
+      "summary": "Mentored AI-first startups in Singapore for Google for Startups (AI First) — guidance on architecture, model selection, deployment and scaling.",
+      "tags": [
+        "AI",
+        "AI - Agents",
+        "AI - Gemini",
+        "AI - Generative AI",
+        "AI - ML Engineering (MLOps)"
+      ],
+      "image": "/images/gfs-aifirst-2024.jpg"
     },
     {
       "title": "Mentoring Session for 2024 Solution Challenge TOP 100 teams: Glow Alarm",
