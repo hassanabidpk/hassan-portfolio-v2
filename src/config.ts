@@ -17,6 +17,8 @@ export const site = {
   menu: [
     { label: 'Home', path: '/' },
     { label: 'Talks', path: '/talks' },
+    { label: 'Workshops', path: '/workshops' },
+    { label: 'Mentoring', path: '/mentoring' },
     { label: 'About', path: '/about' },
     { label: 'Contact', path: '/contact' },
   ],
