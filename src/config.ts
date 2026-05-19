@@ -17,7 +17,6 @@ export const site = {
   menu: [
     { label: 'Home', path: '/' },
     { label: 'Talks', path: '/talks' },
-    { label: 'Blog', path: '/blog' },
     { label: 'About', path: '/about' },
     { label: 'Contact', path: '/contact' },
   ],

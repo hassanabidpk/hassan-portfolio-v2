@@ -17,6 +17,18 @@ const { title, description, wide = false } = Astro.props;
         : matchMedia('(prefers-color-scheme: dark)').matches;
       document.documentElement.setAttribute('data-theme', d ? 'dark' : 'light');
     </script>
+    <script is:inline>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations()
+          .then((rs) => rs.forEach((r) => r.unregister()))
+          .catch(() => {});
+        if (window.caches) {
+          caches.keys()
+            .then((ks) => ks.forEach((k) => caches.delete(k)))
+            .catch(() => {});
+        }
+      }
+    </script>
     <Analytics />
   </head>
   <body>

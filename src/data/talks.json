@@ -218,7 +218,8 @@
       "location": "Cebu City, Philippines",
       "summary": "Coroutines for safe, simple asynchronous code on Android.",
       "tags": ["Kotlin", "Jetpack", "Android"],
-      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2020/01/20/f9db5c8e173ce4f62c69.jpg"
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2020/01/20/f9db5c8e173ce4f62c69.jpg",
+      "post": "/posts/app-kotlin-coroutines/"
     },
     {
       "title": "Improve app performance with Kotlin coroutines [DevFest KL]",
@@ -236,7 +237,8 @@
       "location": "Kuala Lumpur, Malaysia",
       "summary": "Intro to Android and Kotlin for DSC leaders from South East Asia.",
       "tags": ["Kotlin", "Jetpack", "Android"],
-      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/09/13/9d4f219804b9e9a5daee.jpg"
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/09/13/9d4f219804b9e9a5daee.jpg",
+      "post": "/posts/android-101/"
     },
     {
       "title": "CameraX JetPack - Android Developers Day 2019",
@@ -245,7 +247,8 @@
       "location": "Jakarta, Indonesia",
       "summary": "CameraX API overview.",
       "tags": ["Jetpack", "Kotlin", "Android"],
-      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/08/05/43b69c051e2a7689ccfe.jpeg"
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/08/05/43b69c051e2a7689ccfe.jpeg",
+      "post": "/posts/exploring-camerax-from-jetpack/"
     },
     {
       "title": "Exploring CameraX Jetpack Library",
@@ -254,7 +257,8 @@
       "location": "Hanoi, Vietnam",
       "summary": "How JetPack CameraX makes camera app development easier vs Camera/Camera2.",
       "tags": ["Jetpack", "Kotlin", "Android"],
-      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/08/05/b236aa92c959024a9d72.jpg"
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/08/05/b236aa92c959024a9d72.jpg",
+      "post": "/posts/exploring-camerax-jetpack/"
     },
     {
       "title": "What's new in Android JetPack",
@@ -263,7 +267,8 @@
       "location": "Kuala Lumpur, Malaysia",
       "summary": "Google I/O JetPack updates including CameraX.",
       "tags": ["Jetpack", "Kotlin", "Android"],
-      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/06/18/78f3f205127b9ce3b1ea.jpg"
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/06/18/78f3f205127b9ce3b1ea.jpg",
+      "post": "/posts/whats-new-in-android-jetpack/"
     },
     {
       "title": "Modern Android Development with Kotlin",
@@ -272,7 +277,8 @@
       "location": "Singapore",
       "summary": "Deep dive into Kotlin and modern Android architecture.",
       "tags": ["Jetpack", "Kotlin", "Android"],
-      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/05/05/175c89d0bab93b39bcd5.jpg"
+      "image": "https://storage.googleapis.com/advocu-app/gde/activity-photos/2019/05/05/175c89d0bab93b39bcd5.jpg",
+      "post": "/posts/kotlin-for-android-devs/"
     },
     {
       "title": "Building Modern Apps using Android Architecture Components - DevFest KL 2018",
