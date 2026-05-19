@@ -1,6 +1,7 @@
 node_modules/
 .cache/
-public/
+# public/ was Gatsby build output; for Astro it is the static assets dir
+!public/
 npm-debug.log
 .eslintcache
 .gatsby-context.js
