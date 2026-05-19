@@ -1,0 +1,24 @@
+---
+import { urlFromPath } from '../lib/postPath';
+interface Props {
+  title: string; description: string; date: Date;
+  category: string; path: string;
+}
+const { title, description, date, category, path } = Astro.props;
+const href = urlFromPath(path);
+const dt = new Date(date).toLocaleDateString('en-US',
+  { year: 'numeric', month: 'short', day: 'numeric' });
+---
+<a class="card" href={href}>
+  <p class="meta">{dt} · {category}</p>
+  <h3>{title}</h3>
+  {description && <p class="desc">{description}</p>}
+</a>
+<style>
+  .card { display: block; padding: 1.25rem 0; border-bottom: 1px solid var(--border); color: var(--fg); }
+  .card:hover { text-decoration: none; }
+  .card:hover h3 { color: var(--accent); }
+  .meta { color: var(--fg-soft); font-size: var(--step--1); }
+  .desc { color: var(--fg-soft); margin-top: .35rem; }
+  h3 { margin: .2rem 0 0; }
+</style>

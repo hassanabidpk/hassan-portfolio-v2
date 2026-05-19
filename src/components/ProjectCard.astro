@@ -1,0 +1,22 @@
+---
+interface Props {
+  title: string; summary: string; tags: string[];
+  link?: string; repo?: string;
+}
+const { title, summary, tags, link, repo } = Astro.props;
+---
+<div class="proj">
+  <h3>{title}</h3>
+  <p>{summary}</p>
+  <p class="tags">{tags.join(' · ')}</p>
+  <p class="links">
+    {link && <a href={link} target="_blank" rel="noopener noreferrer">Visit</a>}
+    {repo && <a href={repo} target="_blank" rel="noopener noreferrer">Code</a>}
+  </p>
+</div>
+<style>
+  .proj { border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; background: var(--bg-soft); }
+  .proj h3 { margin: 0 0 .5rem; }
+  .tags { color: var(--fg-soft); font-size: var(--step--1); margin-top: .75rem; }
+  .links { display: flex; gap: 1rem; margin-top: .75rem; font-size: var(--step--1); }
+</style>

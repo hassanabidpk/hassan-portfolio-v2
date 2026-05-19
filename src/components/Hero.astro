@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets';
+import { site } from '../config';
+import SocialLinks from './SocialLinks.astro';
+import profile from '../assets/profile.jpeg';
+---
+<section class="hero fade-in">
+  <Image src={profile} alt={site.name} width={120} height={120} class="avatar" />
+  <h1>{site.name}</h1>
+  <p class="role">{site.role}</p>
+  <SocialLinks />
+  <p class="cta">
+    <a href="/blog">Read the blog</a> ·
+    <a href="/contact">Get in touch</a>
+  </p>
+</section>
+<style>
+  .hero { padding: 3rem 0 1rem; }
+  .avatar { border-radius: 50%; }
+  .role { color: var(--fg-soft); margin: .5rem 0 1.25rem; font-size: var(--step-1); }
+  .cta { margin-top: 1.25rem; }
+</style>
