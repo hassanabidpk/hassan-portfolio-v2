@@ -1,0 +1,25 @@
+---
+import { site } from '../config';
+import ThemeToggle from './ThemeToggle.astro';
+const path = Astro.url.pathname;
+---
+<header class="site-header">
+  <div class="wrap-wide bar">
+    <a href="/" class="brand">{site.name}</a>
+    <nav aria-label="Primary">
+      {site.menu.map((m) => (
+        <a href={m.path} aria-current={path === m.path ? 'page' : undefined}>{m.label}</a>
+      ))}
+    </nav>
+    <ThemeToggle />
+  </div>
+</header>
+<style>
+  .site-header { border-bottom: 1px solid var(--border); position: sticky; top: 0;
+    background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(8px); z-index: 10; }
+  .bar { display: flex; align-items: center; gap: 1.25rem; padding-top: .9rem; padding-bottom: .9rem; }
+  .brand { font-weight: 700; color: var(--fg); }
+  nav { display: flex; gap: 1rem; margin-left: auto; font-size: var(--step--1); }
+  nav a { color: var(--fg-soft); }
+  nav a[aria-current='page'] { color: var(--accent); }
+</style>

@@ -1,0 +1,14 @@
+---
+import { site } from '../config';
+import SocialLinks from './SocialLinks.astro';
+---
+<footer class="site-footer">
+  <div class="wrap-wide">
+    <SocialLinks />
+    <p>{site.copyright} {site.name}</p>
+  </div>
+</footer>
+<style>
+  .site-footer { border-top: 1px solid var(--border); margin-top: 4rem; padding: 2.5rem 0; color: var(--fg-soft); font-size: var(--step--1); }
+  .site-footer p { margin-top: 1rem; }
+</style>
